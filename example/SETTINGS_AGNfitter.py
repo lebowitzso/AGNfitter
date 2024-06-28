@@ -154,16 +154,23 @@ def FILTERS_settings():
     filters['GALEX_1500'] = [True, 0]  #FUV
 
 
-    filters['add_filters']= False # If 'True' please add them below in ADD FILTERS
+    filters['add_filters']= True # If 'True' please add them below in ADD FILTERS
 
     """==================================
     ADD FILTERS (optional)
     =================================="""
 
     ADDfilters=dict()
-    ADDfilters['names'] = []		## (string/list of strings)User especified filter names. 
+    ADDfilters['names'] = ['F090W', 'F115W', 'F150W', 'F200W', 'F277W', 'F356W', 'F410M', 'F444W'] ## (string/list of strings)User especified filter names. 
                                 	## If name has been previously used, an error message will appear. 
-    ADDfilters['filenames'] = []	## (string/list of strings) File names of the new filters. 
+    ADDfilters['filenames'] = ['F090W_nircam_plus_ote_throughput_moda_sorted.txt', 
+			       'F115W_nircam_plus_ote_throughput_moda_sorted.txt',
+			       'F150W_nircam_plus_ote_throughput_moda_sorted.txt',
+			       'F200W_nircam_plus_ote_throughput_moda_sorted.txt',
+			       'F277W_nircam_plus_ote_throughput_moda_sorted.txt',
+			       'F356W_nircam_plus_ote_throughput_moda_sorted.txt',
+			       'F410M_nircam_plus_ote_throughput_moda_sorted.txt',
+			       'F444W_nircam_plus_ote_throughput_moda_sorted.txt',]	## (string/list of strings) File names of the new filters. 
                                 	## File format: 2 columns of 1) freq/wavelength 2) Throughput. 
                                 	## Path assumed is the cat['path'] especified above. 
                                 	## Example: 'models/FILTERS/my_new_filter.txt'
