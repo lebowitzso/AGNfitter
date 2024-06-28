@@ -30,7 +30,7 @@ def CATALOG_settings():
     ##GENERAL
 
     cat['path'] = '/home/user/AGNfitter/' #path to the AGNfitter code
-    cat['filename'] = cat['path']+ 'data/catalog_example.txt'  
+    cat['filename'] = cat['path']+ 'data/Obj20.txt'  
     cat['filetype'] = 'ASCII'		## catalog file type: 'ASCII' or 'FITS'. 
     cat['name'] = 0			## If ASCII: Column index (int) of source IDs
                                    	## If FITS : Column name (str). E.g. 'ID'
